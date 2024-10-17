@@ -30,3 +30,14 @@ zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $DOTFILES/zsh/scripts.sh
+
+if [ $(command -v "fzf") ]; then
+	source /usr/share/fzf/completion.zsh
+	source /usr/share/fzf/key-binding.zsh
+fi
+
+if [ "$(tty)"="/dev/tty1" ];
+then
+	pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
+fi
