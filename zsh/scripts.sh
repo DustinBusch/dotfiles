@@ -1,5 +1,5 @@
 #!/bin/zsh
 
 compress() {
-	tar cvzf $1.tar.gz $1 
-	}
+    tar cvzf $1.tar.gz $1
+}
