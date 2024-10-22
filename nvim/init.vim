@@ -1,0 +1,1 @@
+/home/dustin/dotfiles/nvim/init.vim

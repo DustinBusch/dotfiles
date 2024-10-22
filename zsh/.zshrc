@@ -47,3 +47,7 @@ source $DOTFILES/zsh/scripts.sh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export TERMINAL=alacritty
+
+bindkey -r '^l'
+bindkey -r '^g'
+bindkey -s '^g' 'clear\n'
