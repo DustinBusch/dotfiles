@@ -93,6 +93,9 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
 
+-- PYTHON
+vim.g.python3_host_prog = '~/dotfiles/.venvs/nvim/bin/python'
+
 -- [[ Setting options ]]
 -- See `:help vim.opt`
 -- NOTE: You can change these options as you wish!
@@ -260,6 +263,8 @@ require('lazy').setup({
       init = function()
         -- VimTeX configuration goes here, e.g.
         vim.g.vimtex_view_method = 'zathura'
+        vim.opt.conceallevel = 1
+        vim.g.tex_conceal = 'abdmg'
       end,
     },
     {
@@ -267,6 +272,15 @@ require('lazy').setup({
       opts = {
         modes = { ':', '/', '?' },
       },
+    },
+    {
+      'SirVer/ultisnips',
+      config = function()
+        vim.g.UltiSnipsExpandTrigger = '<tab>'
+        vim.g.UltiSnipsJumpForwardTrigger = '<tab>'
+        vim.g.UltiSnipsJumpBackwardTrigger = '<s-tab>'
+        vim.g.UltiSnipsSnippetDirectories = { '~/dotfiles/MySnippets' }
+      end,
     },
   },
 
@@ -910,11 +924,13 @@ require('lazy').setup({
         -- Some languages depend on vim's regex highlighting system (such as Ruby) for indent rules.
         --  If you are experiencing weird indenting issues, add the language to
         --  the list of additional_vim_regex_highlighting and disabled languages for indent.
+        disable = { 'tex' },
         additional_vim_regex_highlighting = { 'ruby' },
       },
       indent = { enable = true, disable = { 'ruby' } },
     },
     -- There are additional nvim-treesitter modules that you can use to interact
+    'https://github.com/gelguy/wilder.nvim.git',
     -- with nvim-treesitter. You should go explore a few and see what interests you:
     --
     --    - Incremental selection: Included, see `:help nvim-treesitter-incremental-selection-mod`
