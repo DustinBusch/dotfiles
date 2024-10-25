@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc} %translates input encoding
 \usepackage[T1]{fontenc} %select font encoding
 \usepackage{textcomp} %supports text symbols (e.g. bullets)
-\usepackage[german]{babel} %change dep. which lang
+\usepackage[ngerman]{babel} %change dep. which lang
 \usepackage{url} %including url into latex
 \usepackage{graphicx} %includegraphics
 \usepackage{float} %floating objects
@@ -10,31 +10,40 @@
 \usepackage{bookmark}
 \usepackage{enumitem} %control over list environments
 \usepackage{hyperref, theoremref}
+% configures hyperref
 \hypersetup{
 	pdftitle={Assignment},
 	colorlinks=true, linkcolor=doc!90,
 	bookmarksnumbered=true,
 	bookmarksopen=true
 }
-\usepackage[most,many,breakable]{tcolorbox}
-\usepackage{varwidth}
-\usepackage{etoolbox}
-\usepackage{nameref}
+
+% Box and Layout Packages
+\usepackage[most,many,breakable]{tcolorbox} % colored boxes
+\usepackage{varwidth} % with based boxes
+\usepackage[]{parski} % Don't indent paragraphs, leave some space between them
+
+% Utility packages
+\usepackage{etoolbox} % offers programming tools for new commands
+\usepackage{nameref} % provide named ref to sections and figures
+\usepackage{import} % facilitates inclusion of files and folders
+\usepackage{xifthen} % adds conditional commands to latex
+
+% Graphics and Drawing Packages
 \usepackage{tikz-cd}
-\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+
+% Algorithm and Comment Pages
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e} % typesetting algorithms with structured formats
 \usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
-\usepackage{import}
-\usepackage{xifthen}
+
+% Page Layout and Presentation Packages
+\usepackage{emptypage} % Hide page number when page is empty
+\usepackage{subcaption} % supports creation of sub-captions
+\usepackage{multicol} % allow document to have multiple columns
+\usepackage{xcolor} % enhances color management 
+
 \usepackage{pdfpages}
 \usepackage{transparent}
-% Don't indent paragraphs, leave some space between them
-\usepackage[]{parski}
-
-% Hide page number when page is empty
-\usepackage{emptypage}
-\usepackage{subcaption}
-\usepackage{multicol}
-\usepackage{xcolor}
 
 % Other font I sometimes use
 % \usepackage{cmbright}
