@@ -160,6 +160,13 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+-- Enable spell checking
+vim.opt.spell = true
+vim.opt.spelllang = { 'en_gb', 'de' } -- Added 'de' for German
+
+-- Create a mapping for Ctrl+l in insert mode
+-- vim.api.nvim_set_keymap('i', '<C-s>', '<C-g>u<Esc>[s1z=`]a<C-g>u', { noremap = true, silent = true })
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
