@@ -1,8 +1,9 @@
 % basic packages
+\usepackage{lmodern}
 \usepackage[utf8]{inputenc} %translates input encoding
 \usepackage[T1]{fontenc} %select font encoding
 \usepackage{textcomp} %supports text symbols (e.g. bullets)
-\usepackage[ngerman]{babel} %change dep. which lang
+\usepackage[english]{babel} %change dep. which lang
 \usepackage{url} %including url into latex
 \usepackage{graphicx} %includegraphics
 \usepackage{float} %floating objects
@@ -21,7 +22,7 @@
 % Box and Layout Packages
 \usepackage[most,many,breakable]{tcolorbox} % colored boxes
 \usepackage{varwidth} % with based boxes
-\usepackage[]{parski} % Don't indent paragraphs, leave some space between them
+\usepackage[]{parskip} % Don't indent paragraphs, leave some space between them
 
 % Utility packages
 \usepackage{etoolbox} % offers programming tools for new commands
@@ -50,6 +51,7 @@
 
 % Math stuff
 \usepackage{amsmath, amsfonts, mathtools, amsthm, amssymb}
+\usepackage{mathrsfs}
 \usepackage[tmargin=2cm,rmargin=1in,lmargin=1in,margin=0.85in,bmargin=2cm,footskip=.2in]{geometry}
 \usepackage[varbb]{newpxmath}
 \usepackage{xfrac}
@@ -76,10 +78,6 @@
 \let\iff\Leftrightarrow
 \let\epsilon\varepsilon
 
-% Add \contra symbol to denote contradiction
-\usepackage{stmaryd} % for \lightning
-\newcommand\contra{\scalebox{1.5}{$\lightning$}}
-
 % Command for short corrections
 % Usage: 1+1=\correct{3}{2}
 
@@ -94,10 +92,6 @@
 
 % hide parts
 \newcommand\hide[1]{}
-
-% si unitx
-\usepackage{siunitx}
-\sisetup{locale = GER}
 
 % SeniorMars
 \newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{#1}}
