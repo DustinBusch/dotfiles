@@ -52,75 +52,93 @@ endglobal
 ###############
 
 snippet lemma "Lemma" bi
-\begin{lemma}
+\begin{lemma}{${1:title}}{${2:refname}}
 	${0:${VISUAL}}
 \end{lemma}
 endsnippet
 
 snippet prop "Proposition" bi
-\begin{prop}[$1]
+\begin{prop}{${1:title}}{${2:refname}}
 	${0:${VISUAL}}
 \end{prop}
 endsnippet
 
 snippet thrm "Theorem" bi
-\begin{theorem}[$1]
+\begin{theorem}{${1:title}}{${2:refname}}
 	${0:${VISUAL}}
 \end{theorem}
 endsnippet
 
+snippet sol "Solution" bi
+\begin{solution}{${1:title}}{${2:refname}}
+	${0:${VISUAL}}
+\end{solution}
+endsnippet
+
 snippet post "postulate" bi
-\begin{postulate}[$1]
+\begin{postulate}{${1:title}}{${2:refname}}
 	${0:${VISUAL}}
 \end{postulate}
 endsnippet
 
 snippet prf "Proof" bi
-\begin{myproof}[$1]
+\begin{proof}[$1]
 	${0:${VISUAL}}
-\end{myproof}
+\end{proof}
 endsnippet
 
 snippet def "Definition" bi
-\begin{definition}[$1]
+\begin{definition}{${1:title}}{${2:refname}}
 	${0:${VISUAL}}
 \end{definition}
 endsnippet
 
 snippet nte "Note" bi
-\begin{note}[$1]
+\begin{note}{${1:title}}{${2:refname}}
 	${0:${VISUAL}}
 \end{note}
 endsnippet
 
 snippet prob "Problem" bi
-\begin{problem}[$1]
+\begin{problem}{${1:title}}{${2:refname}}
 	${0:${VISUAL}}
 \end{problem}
 endsnippet
 
 snippet corl "Corollary" bi
-\begin{corollary}[$1]
+\begin{corollary}{${1:title}}{${2:refname}}
 	${0:${VISUAL}}
 \end{corollary}
 endsnippet
 
+snippet exer "Exercise" bi
+\begin{exercise}{${1:title}}{${2:refname}}
+	${0:${VISUAL}}
+\end{exercise}
+endsnippet
+
 snippet example "Example" bi
-\begin{example}[$1]
+\begin{example}{${1:title}}{${2:refname}}
 	${0:${VISUAL}}
 \end{example}
 endsnippet
 
 snippet notion "Notation" bi
-\begin{notation}[$1]
+\begin{notation}{${1:title}}{${2:refname}}
 	$0${VISUAL}
 \end{notation}
 endsnippet
 
 snippet conc "Conclusion" bi
-\begin{conclusion}[$1]
+\begin{conclusion}{${1:title}}{${2:refname}}
 	$0${VISUAL}
 \end{conclusion}
+endsnippet
+
+snippet ques "Question" bi
+\begin{question}{${1:title}}{${2:refname}}
+	$0${VISUAL}
+\end{question}
 endsnippet
 
 snippet fig "Figure environment" bi
@@ -437,14 +455,10 @@ snippet beg "begin{} / end{}" bA
 endsnippet
 
 snippet nc "newcommand" bA
-\newcommand{#1}{#2}
-#0
-endsnippet
-
-snippet rnc "renewcommand" bA
-\newcommand{#1}{#2}
-#0
+\newcommand{$1}{$2}
 endsnippet
 
 
-
+snippet abs "norm" w 
+|$1| 
+endsnippet
