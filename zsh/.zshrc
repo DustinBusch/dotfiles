@@ -53,3 +53,6 @@ bindkey -r '^g'
 bindkey -s '^g' 'clear\n'
 
 export PATH=$PATH:~/texlive/2024/bin/x86_64-linux
+
+export DOTFILES="$HOME/dotfiles"
+
