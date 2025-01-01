@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1730931037.32453 "main.tex" "main.pdf" "main" 1730931039.30207 0
+["pdflatex"] 1735751111.97965 "main.tex" "main.pdf" "main" 1735751113.95416 0
   "/home/dustin/.texlive/texmf-var/web2c/pdftex/pdflatex.fmt" 1729961936 7113017 7c0d8e7aae99e3255a3b26da2b9e4f33 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1727349926 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1727349926 1004 54797486969f23fa377b128694d548df ""
@@ -218,12 +218,12 @@
   "/usr/share/texmf-dist/tex/latex/xfrac/xfrac.sty" 1727349926 14847 00e49ca86bcb9e60825f609034895f26 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1727349926 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1730060832.61346 5335430 9b9c786c0801899a4f2a284ba020068c ""
-  "letterfonts.tex" 1730800301.02848 332 bbd192c8bdf40bd04ec88973f281e640 ""
-  "macros.tex" 1730929929.58706 280 643374931b0a5f3aeb1e8b1b6ac4f05c ""
-  "main.aux" 1730931039.13544 1237 9de609c9460ed00459bbc0214484f9d5 "pdflatex"
-  "main.tex" 1730930570.83131 1502 ea3959ee29099a16e4035c1c52704bd7 ""
-  "main.toc" 1730931039.13878 172 e4038eb958b83f7004d56ffc2d7dab0e "pdflatex"
-  "preamble.tex" 1730931036.01546 13623 d0b2ca567213535797d3d8efd7be4f35 ""
+  "letterfonts.tex" 1731882273.58896 332 bbd192c8bdf40bd04ec88973f281e640 ""
+  "macros.tex" 1735751103.89067 450 75a9d708577c86706133fdd504e10b3c ""
+  "main.aux" 1735751113.80412 1237 9de609c9460ed00459bbc0214484f9d5 "pdflatex"
+  "main.tex" 1730931453.90134 1502 ea3959ee29099a16e4035c1c52704bd7 ""
+  "main.toc" 1735751113.80745 172 e4038eb958b83f7004d56ffc2d7dab0e "pdflatex"
+  "preamble.tex" 1730931488.04061 13623 d0b2ca567213535797d3d8efd7be4f35 ""
   (generated)
   "main.aux"
   "main.log"
